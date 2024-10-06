@@ -13,6 +13,15 @@ body {
     letter-spacing: 0.06rem;
 }
 
+h1 {
+    justify-self: center;
+    align-self: center;
+}
+
+main {
+    display: flex;
+}
+
 .navbar {
     display: inline-flex;
     align-items: center;
@@ -96,4 +105,17 @@ body {
     background-color: transparent;
     justify-self: center;
     align-self: center;
+}
+
+.chapter-one-heading {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.h1-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
 }
