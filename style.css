@@ -1,0 +1,99 @@
+:root {
+    --color-base-text: 18, 18, 18;
+    --color-shadow: 18, 18, 18;
+    --color-border: 18, 18, 18, 0.75;
+    --font-body-scale: 1.0;
+    --duration-short: 100ms;
+    --duration-default: 200ms;
+    --duration-long: 500ms;
+}
+
+body {
+    font-family: "NersansThree";
+    letter-spacing: 0.06rem;
+}
+
+.navbar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-wrapper {
+    display: block;
+    position: relative;
+    z-index: 1;
+    border-bottom: 0.1rem solid rgba(var(--color-border));
+}
+
+.header__menu {
+    padding: 0 1rem;
+}
+
+.header__menu-item {
+    padding: 1.2rem;
+    text-decoration: none;
+    color: rgb(var(--color-base-text));
+}
+
+.header__menu-item:hover {
+    color: rgb(var(--color-base-text));
+}
+
+.header__menu-item span {
+    transition: text-decoration var(--duration-short) ease;
+}
+
+.header__menu-item:hover span {
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+}
+
+.list-menu__item {
+    display: flex;
+    align-items: center;
+    line-height: calc(1 + 0.3 / var(--font-body-scale));
+}
+
+.list-menu {
+    padding: 2.4rem 0;
+}
+
+.list-menu--inline {
+    justify-content: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header__inline-menu {
+    margin-top: 1.05rem;
+    margin-left: 0;
+    display: block;
+    justify-self: center;
+}
+
+.header__heading-logo {
+    display: inline-block;
+    max-width: 100px;
+    height: auto;
+}
+
+.header__heading-link {
+    display: inline-block;
+    padding: 0.75rem;
+    cursor: pointer;
+    background-color: transparent;
+    justify-self: center;
+    align-self: center;
+}
