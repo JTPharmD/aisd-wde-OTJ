@@ -8,6 +8,18 @@
     --duration-long: 500ms;
 }
 
+@media only screen and (max-width: 1470px) {
+    .player-profiles-container {
+        max-width: 75%;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .player-profiles-container {
+        max-width: 100%;
+    }
+}
+
 body {
     font-family: "NersansThree", sans-serif;
     letter-spacing: 0.04rem;
@@ -184,19 +196,24 @@ main {
 
 .player-profiles-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: flex-start;
-    align-content: flex-start;
-    flex-wrap: wrap;
+    max-width: 66%;
+    margin: auto;
+    
 }
+
+
 
 .player-profiles {
     display: flex;
     flex-direction: column;
-    width: 500;
-    height: 600;
+    width: 300px;
+    height: 500px;
     flex-wrap: wrap;
     padding: 10px;
+    align-items: center;
 }
 
 .player-name {
